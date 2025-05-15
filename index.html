@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
-
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="send()">
+            <input type="text" id="username" placeholder="Benutzername" />
+            <input type="password" id="password" placeholder="Passwort" />
+            <button type="submit">Einloggen</button>
+        </form>
+        <p id="error"></p>
+    </div>
 </body>
 
 </html>
