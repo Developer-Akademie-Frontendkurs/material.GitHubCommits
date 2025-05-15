@@ -33,6 +33,12 @@ button {
   border-radius: 6px;
 }
 
+button:hover {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
 #error {
   color: red;
   font-size: 0.9rem;
