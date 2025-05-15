@@ -7,7 +7,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
     <script>
-        function send() {
+        function send(event) {
+            event.preventDefault();
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
             const error = document.getElementById("error");
@@ -23,7 +24,7 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form id="loginForm" onsubmit="send()">
+        <form id="loginForm" onsubmit="send(event)">
             <input type="text" id="username" placeholder="Benutzername" />
             <input type="password" id="password" placeholder="Passwort" />
             <button type="submit">Einloggen</button>
