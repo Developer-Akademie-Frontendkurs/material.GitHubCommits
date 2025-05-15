@@ -17,6 +17,13 @@
                 error.textContent = "Bitte alle Felder ausfüllen";
                 return;
             }
+            if (username === "admin" && password === "1234") {
+                error.style.color = "green";
+                error.textContent = "Login erfolgreich!";
+            } else {
+                error.style.color = "red";
+                error.textContent = "Login fehlgeschlagen!";
+            }
         }
     </script>
 </head>
