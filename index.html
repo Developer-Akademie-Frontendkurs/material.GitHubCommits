@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script>
+        function send() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const error = document.getElementById("error");
+            if (!username || !password) {
+                error.style.color = "red";
+                error.textContent = "Bitte alle Felder ausfüllen";
+                return;
+            }
+        }
+    </script>
 </head>
 
 <body>
