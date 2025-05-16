@@ -1,3 +1,7 @@
+/**
+ * Adds a submit Function to the login form.
+ * Prevents default form submission and performs basic validation and test authentication.
+ */
 function send(event) {
     event.preventDefault();
     const username = document.getElementById("username").value.trim();
@@ -18,6 +22,9 @@ function send(event) {
 }
 
 
+/**
+ * Toggles dark mode by adding or removing a 'dark' class on the body element.
+ */
 function toggleBackground() {
   document.body.classList.toggle('dark');
 }
