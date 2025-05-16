@@ -16,3 +16,8 @@ function send(event) {
         error.textContent = "Login fehlgeschlagen!";
     }
 }
+
+
+function toggleBackground() {
+  document.body.classList.toggle('dark');
+}

@@ -44,3 +44,24 @@ button:hover {
   color: red;
   font-size: 0.9rem;
 }
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .login-container {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+.toggle-dark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #333;
+}
